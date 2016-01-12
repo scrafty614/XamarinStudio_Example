@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:id="@+id/NegocioFoto"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp" />
+    <!--
+            <PlifToolbarMenu.CircleImageView
+      xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:id="@+id/NegocioFoto"
+            custom:border="false"
+            custom:border_color="#eeeeee"
+            custom:border_width="4dp"
+            custom:shadow="false" />   
+            -->
+        <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:visibility="gone" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/entryname"
+                android:textColor="#337AB7"
+                android:textStyle="normal"
+                android:textSize="18dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:text="Los LOCOS son los que cambian al mundo" />
+            <ImageView
+                android:src="@drawable/estrellas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calificacion"
+                android:layout_gravity="left" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5">
+                <ImageView
+                    android:src="@drawable/corazon"
+                    android:id="@+id/imageView1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="3dp" />
+                <TextView
+                    android:text="corazones"
+                    android:textColor="#337AB7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/corazones"
+                    android:layout_marginLeft="3dp" />
+            </LinearLayout>
+        </LinearLayout>
+    <!-- Linear Layout Vertical -->
+    </LinearLayout>
+<!-- Linear Layout Horizontal -->
+</LinearLayout>

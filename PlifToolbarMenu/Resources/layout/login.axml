@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+<!-- "#F0F3F6" -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="0dp"
+            app:expandedTitleMarginEnd="64dp">
+            <ImageView
+                android:id="@+id/backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cafe_test"
+                app:layout_collapseMode="parallax" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!--   Inicia el cuadro blanco -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:padding="15dp"
+            android:background="#BFF0F3F6"
+            android:id="@+id/logincont"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+        <!-- Inicia todo lo que está dentro del cuadro blanco -->
+        <!--Inicia detalles de Facebook -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/infoface"
+                android:gravity="center"
+                android:visibility="gone">
+                <ImageView
+                    android:src="@drawable/faceflat"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imgface" />
+                <TextView
+                    android:text="Entrando a Plif como Rutiaga Cervantes"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/entrandoface"
+                    android:paddingBottom="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:includeFontPadding="false"
+                    android:textSize="20sp"
+                    android:textColor="#ff333333" />
+                <ProgressBar
+                    android:layout_marginTop="5dp"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/esperaface" />
+            </LinearLayout>
+        <!-- Termina detalles de Facebook -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/infologin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/slogan"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout1"
+                        android:gravity="center"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp">
+                        <TextView
+                            android:text="EXPLORA. "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/textView1"
+                            android:paddingBottom="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:includeFontPadding="false"
+                            android:textSize="20sp"
+                            android:textColor="#ff333333" />
+                        <TextView
+                            android:text="ENCUENTRA. "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView2"
+                            android:paddingBottom="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:includeFontPadding="false"
+                            android:textSize="20sp"
+                            android:textColor="#ff2a4496" />
+                        <TextView
+                            android:text="DISFRUTA!"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/textView3"
+                            android:paddingBottom="0dp"
+                            android:includeFontPadding="false"
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="#ffe8451f" />
+                    </LinearLayout>
+                <!-- HEADER TEXT SLOGAN  -->
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/logincorreo"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText1"
+                        android:hint="Correo Electrónico:"
+                        android:textColorHint="#2A4596"
+                        android:textColor="#2A4596"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/logincorreo"
+                    android:layout_marginBottom="5dp">
+                    <EditText
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editText2"
+                        android:hint="Contraseña:"
+                        android:textColorHint="#2A4596"
+                        android:textColor="#2A4596" />
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonspar"
+                    android:gravity="center"
+                    android:layout_marginBottom="2.5dp">
+                    <Button
+                        android:text="Ingresar"
+                        android:textColor="#FFF"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:layout_marginRight="1.5dp"
+                        android:id="@+id/button1"
+                        android:background="@drawable/loginbtn" />
+                    <Button
+                        android:text="Regístrate"
+                        android:textColor="#FFF"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="1.5dp"
+                        android:id="@+id/registro"
+                        android:background="@drawable/regbtn" />
+                </LinearLayout>
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/connectWithFbButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="  connect_with_facebook" />
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar1"
+                    android:visibility="gone" />
+            </LinearLayout>
+        <!-- Termina todo lo que está dentro del cuadro blanco -->
+        </LinearLayout>
+    <!--Termina el cuadro blanco-->
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/snackbarPosition" />
+    <ImageView
+        android:src="@drawable/bola"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:id="@+id/logoplif"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0.0dp"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|center"
+        android:clickable="true" />
+<!--
+        <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/bola"
+        android:layout_margin="0dp"
+        android:clickable="true" />
+        -->
+</android.support.design.widget.CoordinatorLayout>

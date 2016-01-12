@@ -1,0 +1,6 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res-auto">
+	<item android:id="@+id/action_share"
+		  android:icon="@drawable/btn_plif"
+		  android:title="Share"
+		  myapp:showAsAction="never"/>
+</menu>

@@ -1,0 +1,9 @@
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\bin\Debug\Cheesesquare.UITests.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\bin\Debug\Cheesesquare.UITests.pdb
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\bin\Debug\nunit.framework.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\bin\Debug\Xamarin.UITest.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\bin\Debug\Xamarin.UITest.xml
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\bin\Debug\nunit.framework.xml
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\obj\Debug\Cheesesquare.UITests.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\obj\Debug\Cheesesquare.UITests.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\Cheesesquare.UITests\obj\Debug\Cheesesquare.UITests.pdb

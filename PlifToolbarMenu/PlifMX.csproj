@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{F43DC241-35D3-4270-A815-3E8471012549}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PlifToolbarMenu</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>PlifToolbarMenu</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Desktop\PlifAssemblies</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\Desktop\PlifAssemblies</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Json" />
+    <Reference Include="UrlImageViewHelper">
+      <HintPath>..\Components\urlimageviewhelper-1.0.4\lib\android\UrlImageViewHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>..\Components\xamarin.mobile-0.7.6\lib\android\Xamarin.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.0.1.3\lib\MonoAndroid403\Xamarin.Android.Support.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Base.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Facebook">
+      <HintPath>..\packages\Xamarin.Facebook.Android.4.7.0.1\lib\MonoAndroid403\Xamarin.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Maps">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Maps.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Maps.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MyActionBarDrawerToggle.cs" />
+    <Compile Include="login.cs" />
+    <Compile Include="getGeo.cs" />
+    <Compile Include="Fragments\Fragment1.cs" />
+    <Compile Include="Fragments\Fragment2.cs" />
+    <Compile Include="Fragments\Fragment3.cs" />
+    <Compile Include="Fragments\Fragment4.cs" />
+    <Compile Include="MyListAdapter.cs" />
+    <Compile Include="Fragments\HomeFragment1.cs" />
+    <Compile Include="Fragments\HomeFragment2.cs" />
+    <Compile Include="Fragments\HomeFragment3.cs" />
+    <Compile Include="HomeActivity.cs" />
+    <Compile Include="SlidingTabScrollView.cs" />
+    <Compile Include="SlidingTabsFragment.cs" />
+    <Compile Include="SlidingTabStrip.cs" />
+    <Compile Include="profile.cs" />
+    <Compile Include="Negocio.cs" />
+    <Compile Include="Categoria.cs" />
+    <Compile Include="MyNegociosAdapter.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="MyRegionesAdapter.cs" />
+    <Compile Include="Fragments\Fragment5.cs" />
+    <Compile Include="PerfilNegocio.cs" />
+    <Compile Include="CircleImageView.cs" />
+    <Compile Include="Review.cs">
+      <DependentUpon>ReviewDetalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyReviewsAdapter.cs" />
+    <Compile Include="ReviewDetalles.cs" />
+    <Compile Include="LinearDetalles.cs" />
+    <Compile Include="AppConstant.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="GaleriaAdapter.cs" />
+    <Compile Include="ExpandableGridView.cs" />
+    <Compile Include="ExpandableHeightGridView.cs" />
+    <Compile Include="GaleriaImagenes.cs" />
+    <Compile Include="PlifGallery.cs" />
+    <Compile Include="ListaImagenes.cs" />
+    <Compile Include="PantallaCompleta.cs" />
+    <Compile Include="SliderGaleria.cs" />
+    <Compile Include="SliderActivity.cs" />
+    <Compile Include="ImagenZoom.cs" />
+    <Compile Include="ScaleImageView.cs" />
+    <Compile Include="EnviarMensaje.cs" />
+    <Compile Include="plifserver.cs" />
+    <Compile Include="pliffunctions.cs" />
+    <Compile Include="BlogEntry.cs" />
+    <Compile Include="BlogAdapter.cs" />
+    <Compile Include="AgregarNegocio.cs" />
+    <Compile Include="PerfilPremium.cs" />
+    <Compile Include="RegistroPlif.cs" />
+    <Compile Include="Registro.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Resources\layout\EElistview_row.axml" />
+    <None Include="packages.config" />
+    <None Include="Resources\drawable\addlike.xml" />
+    <None Include="PluginsHelp\GeolocatorReadme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\menu\action_menu.xml" />
+    <AndroidResource Include="Resources\menu\nav_menu.xml" />
+    <AndroidResource Include="Resources\layout\drawer_header.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_social_share.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_social_share.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_social_share.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_social_share.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_action_social_share.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_plif.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_plif.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_plif.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_plif.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\btn_plif.png" />
+    <AndroidResource Include="Resources\drawable\defaultcover.jpg" />
+    <AndroidResource Include="Resources\drawable\backgears.jpg" />
+    <AndroidResource Include="Resources\drawable\background.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\nav.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\nav.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\nav.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\nav.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\nav.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bussines.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\logout.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bussines.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\logout.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bussines.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logout.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bussines.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\logout.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bussines.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\logout.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\search.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\save.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\save.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\save.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\save.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\save.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\home.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\home.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\home.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\home.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\home.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bg.jpg" />
+    <AndroidResource Include="Resources\layout\login.axml" />
+    <AndroidResource Include="Resources\drawable\bola.png" />
+    <AndroidResource Include="Resources\drawable\profile.jpg" />
+    <AndroidResource Include="Resources\drawable\borderimg.xml" />
+    <AndroidResource Include="Resources\layout\Fragment1.axml" />
+    <AndroidResource Include="Resources\layout\Fragment2.axml" />
+    <AndroidResource Include="Resources\layout\Fragment3.axml" />
+    <AndroidResource Include="Resources\layout\Fragment4.axml" />
+    <AndroidResource Include="Resources\layout\listview_row.axml" />
+    <AndroidResource Include="Resources\drawable\marca.jpg" />
+    <AndroidResource Include="Resources\anim\Flip_left_in.xml" />
+    <AndroidResource Include="Resources\anim\Flip_left_out.xml" />
+    <AndroidResource Include="Resources\anim\Flip_right_in.xml" />
+    <AndroidResource Include="Resources\anim\Flip_right_out.xml" />
+    <AndroidResource Include="Resources\drawable\boton_naranja_cuadrado.xml" />
+    <AndroidResource Include="Resources\drawable\home_view.jpg" />
+    <AndroidResource Include="Resources\drawable\logop.png" />
+    <AndroidResource Include="Resources\anim\Slide_left_in.xml" />
+    <AndroidResource Include="Resources\anim\Slide_left_out.xml" />
+    <AndroidResource Include="Resources\anim\Slide_right_in.xml" />
+    <AndroidResource Include="Resources\anim\Slide_right_out.xml" />
+    <AndroidResource Include="Resources\drawable\plif_slide_1.png" />
+    <AndroidResource Include="Resources\drawable\plif_slide_2.png" />
+    <AndroidResource Include="Resources\drawable\plif_slide_3.png" />
+    <AndroidResource Include="Resources\layout\Home.axml" />
+    <AndroidResource Include="Resources\layout\HomeFragment1.axml" />
+    <AndroidResource Include="Resources\layout\HomeFragment2.axml" />
+    <AndroidResource Include="Resources\layout\HomeFragment3.axml" />
+    <AndroidResource Include="Resources\values\Animations.xml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\layout\fragment_sample.axml" />
+    <AndroidResource Include="Resources\layout\pager_item.axml" />
+    <AndroidResource Include="Resources\layout\profile.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_back.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\estrellas.PNG" />
+    <AndroidResource Include="Resources\drawable-mdpi\estrellas.PNG" />
+    <AndroidResource Include="Resources\drawable-xhdpi\estrellas.PNG" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\estrellas.PNG" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\estrellas.PNG" />
+    <AndroidResource Include="Resources\drawable\load.gif" />
+    <AndroidResource Include="Resources\drawable\bolaplace.jpg" />
+    <AndroidResource Include="Resources\drawable\back.xml" />
+    <AndroidResource Include="Resources\layout\spinnerfuck.axml" />
+    <AndroidResource Include="Resources\drawable\backbtn.xml" />
+    <AndroidResource Include="Resources\drawable\backbtncerca.xml" />
+    <AndroidResource Include="Resources\drawable\busqueda.xml" />
+    <AndroidResource Include="Resources\drawable\busquedaactive.xml" />
+    <AndroidResource Include="Resources\drawable\Hover.xml" />
+    <AndroidResource Include="Resources\anim\cycle_7.xml" />
+    <AndroidResource Include="Resources\anim\shake.xml" />
+    <AndroidResource Include="Resources\drawable\hotel.jpg" />
+    <AndroidResource Include="Resources\drawable\circle.xml" />
+    <AndroidResource Include="Resources\drawable\img.xml" />
+    <AndroidResource Include="Resources\layout\Fragment5.axml" />
+    <AndroidResource Include="Resources\layout\perfil_negocio.axml" />
+    <AndroidResource Include="Resources\drawable\dcover.jpg" />
+    <AndroidResource Include="Resources\drawable\e0.png" />
+    <AndroidResource Include="Resources\drawable\e1.png" />
+    <AndroidResource Include="Resources\drawable\e2.png" />
+    <AndroidResource Include="Resources\drawable\e3.png" />
+    <AndroidResource Include="Resources\drawable\e4.png" />
+    <AndroidResource Include="Resources\drawable\e5.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\e0.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\e1.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\e2.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\e3.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\e4.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\e5.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\e0.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\e1.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\e2.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\e3.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\e4.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\e5.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\e0.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\e1.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\e2.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\e3.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\e4.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\e5.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\e0.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\e1.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\e2.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\e3.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\e4.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\e5.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\e0.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\e1.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\e2.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\e3.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\e4.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\e5.png" />
+    <AndroidResource Include="Resources\drawable\corazon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\corazon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\corazon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\corazon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\corazon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\corazon.png" />
+    <AndroidResource Include="Resources\drawable\fondoinfo.xml" />
+    <AndroidResource Include="Resources\drawable\shadow.xml" />
+    <AndroidResource Include="Resources\drawable\pliflocation2.png" />
+    <AndroidResource Include="Resources\drawable\pliflocation3.png" />
+    <AndroidResource Include="Resources\drawable\addimgbtn.xml" />
+    <AndroidResource Include="Resources\drawable\addcomentbtn.xml" />
+    <AndroidResource Include="Resources\drawable\addtip.xml" />
+    <AndroidResource Include="Resources\drawable\addportada.xml" />
+    <AndroidResource Include="Resources\drawable\addlike2.xml" />
+    <AndroidResource Include="Resources\drawable\fondohorario.xml" />
+    <AndroidResource Include="Resources\values\attr.xml" />
+    <AndroidResource Include="Resources\anim\bounce.xml" />
+    <AndroidResource Include="Resources\drawable\loader.xml" />
+    <AndroidResource Include="Resources\layout\listview_comentarios.axml" />
+    <AndroidResource Include="Resources\drawable\jefe.jpg" />
+    <AndroidResource Include="Resources\drawable\reviews_border.xml" />
+    <AndroidResource Include="Resources\drawable\noprof.jpg" />
+    <AndroidResource Include="Resources\layout\img_layout.axml" />
+    <AndroidResource Include="Resources\drawable\ic_discuss.png" />
+    <AndroidResource Include="Resources\drawable\cafe_test.jpg" />
+    <AndroidResource Include="Resources\drawable\plifedi.png" />
+    <AndroidResource Include="Resources\drawable\loginbtn.xml" />
+    <AndroidResource Include="Resources\anim\slidedown.xml" />
+    <AndroidResource Include="Resources\anim\fadein.xml" />
+    <AndroidResource Include="Resources\drawable\regbtn.xml" />
+    <AndroidResource Include="Resources\drawable\facebtn.xml" />
+    <AndroidResource Include="Resources\drawable\mtdes.jpg" />
+    <AndroidResource Include="Resources\drawable\mtdes2.jpg" />
+    <AndroidResource Include="Resources\anim\floatbounce.xml" />
+    <AndroidResource Include="Resources\drawable\md_blue2.jpg" />
+    <AndroidResource Include="Resources\drawable\ic_menu.png" />
+    <AndroidResource Include="Resources\drawable\ic_arrow_back.png" />
+    <AndroidResource Include="Resources\drawable\estrellaempty.png" />
+    <AndroidResource Include="Resources\drawable\estrellafull.png" />
+    <AndroidResource Include="Resources\drawable\calificacion.xml" />
+    <AndroidResource Include="Resources\anim\flip.xml" />
+    <AndroidResource Include="Resources\drawable\imgback.xml" />
+    <AndroidResource Include="Resources\layout\galeria_imagenes.axml" />
+    <AndroidResource Include="Resources\values\Dimens.xml" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\layout\photo_item.xml" />
+    <AndroidResource Include="Resources\layout\plif_photoitem.axml" />
+    <AndroidResource Include="Resources\drawable\photogrid_selector.xml" />
+    <AndroidResource Include="Resources\layout\pantalla_completa.axml" />
+    <AndroidResource Include="Resources\layout\SliderGaleria.axml" />
+    <AndroidResource Include="Resources\layout\enviar_mensaje.axml" />
+    <AndroidResource Include="Resources\drawable\backazul.xml" />
+    <AndroidResource Include="Resources\layout\blog_row.axml" />
+    <AndroidResource Include="Resources\drawable\botonflotante.xml" />
+    <AndroidResource Include="Resources\layout\agregar_negocio.axml" />
+    <AndroidResource Include="Resources\layout\respremium_row.axml" />
+    <AndroidResource Include="Resources\drawable\faceflat.png" />
+    <AndroidResource Include="Resources\layout\perfil_premium.axml" />
+    <AndroidResource Include="Resources\drawable\fondoinfopremium.xml" />
+    <AndroidResource Include="Resources\drawable\fondoestrellaspremium.xml" />
+    <AndroidResource Include="Resources\drawable\addlikeprem.xml" />
+    <AndroidResource Include="Resources\drawable\addportadaprem.xml" />
+    <AndroidResource Include="Resources\drawable\addtipprem.xml" />
+    <AndroidResource Include="Resources\drawable\addcomentbtnprem.xml" />
+    <AndroidResource Include="Resources\drawable\addimgbtnprem.xml" />
+    <AndroidResource Include="Resources\drawable\fondoinfopremiumwhite.xml" />
+    <AndroidResource Include="Resources\drawable\ubicacionbtnprem.xml" />
+    <AndroidResource Include="Resources\drawable\ubicacionbtnpressprem.xml" />
+    <AndroidResource Include="Resources\drawable\googlebtn.jpg" />
+    <AndroidResource Include="Resources\drawable\twitterbtn.png" />
+    <AndroidResource Include="Resources\drawable\faceimgbtn.png" />
+    <AndroidResource Include="Resources\drawable\plifbtn.jpg" />
+    <AndroidResource Include="Resources\drawable\backflat.xml" />
+    <AndroidResource Include="Resources\anim\rotation.xml" />
+    <AndroidResource Include="Resources\layout\registro_plif.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\imagenef\" />
+    <Folder Include="Fragments\" />
+    <Folder Include="Resources\anim\" />
+    <Folder Include="Assets\Fonts\" />
+    <Folder Include="Views\" />
+    <Folder Include="Resources\dimen\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="urlimageviewhelper">
+      <Version>1.0.4</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.mobile">
+      <Version>0.7.6</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>22.2.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv7appcompat">
+      <Version>22.2.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportdesign">
+      <Version>22.2.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="facebookandroid">
+      <Version>4.7.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\fa.ttf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

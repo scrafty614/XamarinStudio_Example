@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:background="@color/plif_color_blanco"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout0"
+            android:gravity="center"
+            android:padding="5dp">
+            <TextView
+                android:text="Escribe tu mensaje:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:textColor="@color/black"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="10dp" />
+            <EditText
+                android:inputType="textMultiLine"
+                android:id="@+id/mensaje"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:background="@drawable/back"
+                android:padding="5dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="2px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEE"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/controlcontainer"
+                android:animateLayoutChanges="true">
+                <Button
+                    android:text="Cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cancelar"
+                    android:textColor="@color/plif_color_blanco"
+                    android:background="@drawable/addlike2"
+                    android:layout_marginRight="5dp" />
+                <Button
+                    android:text="Enviar"
+                    android:background="@drawable/addimgbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enviar"
+                    android:textColor="@color/plif_color_blanco"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+            <ProgressBar
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:id="@+id/waitrs"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/loader"
+                android:indeterminateDuration="500" />
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/snackbarPosition" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3396D1"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F3F6"
+    android:id="@+id/MainContainer">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/MainScroll"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout0"
+            android:paddingTop="70dp"
+            android:gravity="center">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <TextView
+                    android:text="EXPLORA. "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/textView1"
+                    android:paddingBottom="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:includeFontPadding="false"
+                    android:textSize="30sp"
+                    android:textColor="#ff333333"
+                    style="@style/SombraTexto" />
+                <TextView
+                    android:text="ENCUENTRA. "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2"
+                    android:paddingBottom="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:includeFontPadding="false"
+                    android:textSize="30sp"
+                    android:textColor="#ff2a4496"
+                    style="@style/SombraTexto" />
+            </LinearLayout>
+        <!-- HEADER TEXT 1  -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <TextView
+                    android:text="DISFRUTA!"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textView3"
+                    android:paddingBottom="0dp"
+                    android:includeFontPadding="false"
+                    android:textSize="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffe8451f"
+                    style="@style/SombraTexto" />
+            </LinearLayout>
+            <TextView
+                android:text="Encuentra todo lo que necesites cerca de ti."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#ff333333" />
+        <!-- INICIAN CIUDADES -->
+            <RelativeLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/durango"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/durango_img"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dcover" />
+                <TextView
+                    android:text="Durango"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/durango_img"
+                    android:layout_marginTop="45dp"
+                    android:id="@+id/textView9"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffff"
+                    style="@style/SombraTextoFuerte"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mazatlan"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/mazatlan_img"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/dcover"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:text="Mazatlan"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/durango_img"
+                    android:layout_marginTop="45dp"
+                    android:id="@+id/textView9"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffff"
+                    style="@style/SombraTextoFuerte"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/torreon"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/torreon_img"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dcover" />
+                <TextView
+                    android:text="Torreón"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/durango_img"
+                    android:layout_marginTop="45dp"
+                    android:id="@+id/textView9"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffff"
+                    style="@style/SombraTextoFuerte"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/zacatecas"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/zacatecas_img"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dcover" />
+                <TextView
+                    android:text="Zacatecas"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zacatecas_img"
+                    android:layout_marginTop="45dp"
+                    android:id="@+id/textView9"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:textColor="#ffffffff"
+                    style="@style/SombraTextoFuerte"
+                    android:gravity="center" />
+            </RelativeLayout>
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getimgsciudades"
+                android:visibility="gone" />
+        </LinearLayout>
+    <!--SCROLLVIEW CHILD-->
+    </ScrollView>
+</RelativeLayout>

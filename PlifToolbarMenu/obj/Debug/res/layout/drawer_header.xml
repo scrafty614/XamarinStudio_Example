@@ -1,0 +1,10 @@
+<LinearLayout android:layout_width="match_parent" android:layout_height="200dp" android:background="@drawable/md_blue2" android:gravity="bottom" android:orientation="vertical" android:paddingTop="10dp" android:paddingLeft="10dp" android:fitsSystemWindows="true" xmlns:android="http://schemas.android.com/apk/res/android"><ImageView android:id="@+id/image_circle" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginBottom="10dp" android:scaleType="centerCrop" android:src="@drawable/profile" android:layout_marginTop="20dp" android:background="@drawable/img" /><!--<PlifToolbarMenu.CircleImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:id="@+id/image_circle"
+        android:src="@drawable/profile"
+        custom:border="false"
+        custom:border_color="#00eeeeee"
+        custom:border_width="0dp"
+        custom:shadow="false"
+        android:layout_marginBottom="15dp" />--><TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:id="@+id/username" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#ffffffff" android:clickable="true" android:layout_marginBottom="0dp" /><TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:id="@+id/role" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cliente" android:textColor="#ffffffff" android:clickable="true" android:layout_marginBottom="15dp" /></LinearLayout>

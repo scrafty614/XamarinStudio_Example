@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Cheesesquare.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.LGD40590e9ba12" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="CheeseDetailActivity.cs" Line="48" Column="17" />
+      <File FileName="Resources\values\dimens.xml" Line="20" Column="6" />
+      <File FileName="Resources\values\Strings.xml" Line="14" Column="67" />
+      <File FileName="Resources\menu\sample_actions.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\MainActivity.cs" line="14" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Cheesesquare AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

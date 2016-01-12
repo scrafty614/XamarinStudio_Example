@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout0"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp">
+        <!-- Nombre, descripción y sitio web -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sample_main_layout"
+                android:background="@drawable/fondoinfo">
+                <TextView
+                    android:text="Datos Generales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sobreeste"
+                    android:textColor="#717A8F"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="10dp" />
+                <TextView
+                    android:text="Nombre:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sobreeste"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombre"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Descripción:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombre"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:id="@+id/descripcion"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/back"
+                    android:padding="5dp" />
+                <TextView
+                    android:text="Sitio web:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sobreeste"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sitioweb"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+            </LinearLayout>
+        <!-- Termina Nombre, descripción y sitio web -->
+        <!-- Datos generales-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sample_main_layout"
+                android:background="@drawable/fondoinfo">
+                <TextView
+                    android:text="Datos Generales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sobreeste"
+                    android:textColor="#717A8F"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="10dp" />
+                <TextView
+                    android:text="Si te encuentras en el negocio que quieres agregar, haz click aquí para llenar algunos datos por ti."
+                    android:textColor="#717A8F"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView1"
+                    android:layout_marginTop="10dp" />
+                <Button
+                    android:text="Localizando..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imhere"
+                    android:enabled="false"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/addlike2" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/fragmentmap"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+                    <fragment
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        class="com.google.android.gms.maps.MapFragment" />
+                </LinearLayout>
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/esperadatos"
+                    style="?android:attr/progressBarStyleSmall" />
+                <TextView
+                    android:text="Región:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/regiontext"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp" />
+                <RadioGroup
+                    android:id="@+id/region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/regiondurango"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Durango"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/regionmazatlan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mazatlán"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/regionzacatecas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zacatecas"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/regiontorreon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Torreón"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Email:"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sobreeste"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Categoría:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sobreeste"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/categorias"
+                    android:background="@drawable/back"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone" />
+                <TextView
+                    android:text="Teléfono:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefonoedit"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="País:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pais"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Ciudad:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ciudad"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Colonia:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/colonia"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Calle:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/calle"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Número"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/numero"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Código Postal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/codigopostal"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Referencias:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombre"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:id="@+id/referencias"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/back"
+                    android:padding="5dp" />
+                <TextView
+                    android:text="Palabras Clave:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tagsnegociotit"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:inputType="textMultiLine"
+                    android:id="@+id/tagsnegocio"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/back"
+                    android:padding="5dp" />
+            </LinearLayout>
+        <!-- Termina datos generales -->
+        <!-- Redes Sociales -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sample_main_layout"
+                android:background="@drawable/fondoinfo">
+                <TextView
+                    android:text="Redes Sociales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sobreeste"
+                    android:textColor="#717A8F"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="10dp" />
+                <TextView
+                    android:text="Facebook:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/facebook"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Twitter:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/twitter"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+                <TextView
+                    android:text="Whatsapp:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/whatsapp"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="5dp" />
+            </LinearLayout>
+        <!-- Termina Redes Sociales -->
+        <!-- Horarios -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sample_main_layout"
+                android:background="@drawable/fondoinfo"
+                android:animateLayoutChanges="false">
+                <TextView
+                    android:text="Horarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horariostext"
+                    android:textColor="#717A8F"
+                    android:textSize="22sp"
+                    android:clickable="true"
+                    android:layout_marginBottom="10dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/horarioscontainer"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/replicarcontainer"
+                        android:gravity="center"
+                        android:background="@drawable/fondoinfo">
+                        <Button
+                            android:text="Replicar"
+                            android:textColor="@color/plif_color_blanco"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/addportada"
+                            android:gravity="center"
+                            android:id="@+id/replicar" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="Lunes:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horariodia"
+                        android:textColor="#717A8F"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lunescontainer"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="40"
+                            android:id="@+id/lunes_a"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="40"
+                            android:id="@+id/lunes_c"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp" />
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/lunes_ac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text=""
+                            app:showText="false" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="Martes:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horariodia"
+                        android:textColor="#717A8F"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lunescontainer"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/martes_a"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/martes_c"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp" />
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/martes_ac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text=""
+                            app:showText="false" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="Miércoles:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horariodia"
+                        android:textColor="#717A8F"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lunescontainer"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/miercoles_a"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/miercoles_c"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp" />
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/miercoles_ac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text=""
+                            app:showText="false" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="Jueves:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horariodia"
+                        android:textColor="#717A8F"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lunescontainer"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/jueves_a"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/jueves_c"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp" />
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/jueves_ac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text=""
+                            app:showText="false" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="Viernes:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horariodia"
+                        android:textColor="#717A8F"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lunescontainer"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/viernes_a"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/viernes_c"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp" />
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/viernes_ac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text=""
+                            app:showText="false" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="Sábado:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horariodia"
+                        android:textColor="#717A8F"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lunescontainer"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/sabado_a"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/sabado_c"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp" />
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/sabado_ac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text=""
+                            app:showText="false" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="Domingo:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horariodia"
+                        android:textColor="#717A8F"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lunescontainer"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/domingo_a"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:id="@+id/domingo_c"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp" />
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/domingo_ac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text=""
+                            app:showText="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            <!-- Termina Horarios Container -->
+            </LinearLayout>
+        <!-- Termina Horarios -->
+        <!-- INICIA DEJAR IMAGENES -->
+        <!-- ESTE LAYOUT ES PARA Cargar imágenes al negocio -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/layoutdejaimagenes"
+                android:background="@drawable/fondoinfo"
+                android:minWidth="25px"
+                android:visibility="visible"
+                android:minHeight="25px"
+                android:animateLayoutChanges="true">
+                <TextView
+                    android:text="Sube tus imágenes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dejarev_tit"
+                    android:textColor="#717A8F"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="2px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EEE"
+                    android:layout_marginBottom="10dp" />
+            <!-- Raya -->
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgcontainernegocio"
+                    android:background="@drawable/back"
+                    android:animateLayoutChanges="true">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/controlcontainer"
+                        android:animateLayoutChanges="true">
+                        <Button
+                            android:text="+ Galería"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/imagennegocio"
+                            android:background="#3C8DBC"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginRight="10dp" />
+                        <Button
+                            android:text="+ Camara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/imagencamaranegocio"
+                            android:background="#00C0EF"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginRight="10dp" />
+                        <Button
+                            android:text="- Deshacer"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="#DD4B39"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/deleteimgnegocio"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="Carga 3 imágenes más!"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/masimagenesnegocio"
+                        android:textColor="#ff717a8f"
+                        android:gravity="center"
+                        android:layout_marginTop="10.0dp" />
+                    <GridLayout xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/imgnegocioprev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        tools:context=".GridXMLActivity" />
+                </LinearLayout>
+            <!-- contenedor de imagenes -->
+            </LinearLayout>
+        <!-- Layout dejar reseña -->
+        <!-- TERMINA DEJAR IMAGENES -->
+        <!-- mas informacion -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sample_main_layout"
+                android:background="@drawable/fondoinfo"
+                android:visibility="gone">
+                <TextView
+                    android:text="Mas Información"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sobreeste"
+                    android:textColor="#717A8F"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="10dp" />
+                <TextView
+                    android:text="Acepta Reservaciones:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/reservaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/reservasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/reservano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Entrega a domicilio:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/entregaadomicilio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/domiciliosi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/domiciliono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Para llevar:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/parallevar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/llevarsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/llevarno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Acepta tarjeta:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/aceptatarjeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/tarjetasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/tarjetano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Familiar:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/ambientefamiliar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/familiarsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/familiarno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Estacionamiento:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/estacionamiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/estacionamientocalle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Propio"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/estacionamientopropio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calle"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/estacionamientovalet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valet"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Nivel de ruido:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/nivelruido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/ruidoalto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alto"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/ruidomedio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medio"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/ruidobajo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bajo"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Alcohol:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/alcohol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/noalcohol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/vinocerveza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vino y cerveza"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/serviciobar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Servicio de bar"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Tiene TV:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/tienetv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/tvsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/tvno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+                <TextView
+                    android:text="Meseros:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telefono"
+                    android:textColor="#717A8F"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="5dp" />
+                <RadioGroup
+                    android:id="@+id/tienemeserios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+                    <RadioButton
+                        android:id="@+id/simeseros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si"
+                        android:textColor="#717A8F" />
+                    <RadioButton
+                        android:id="@+id/nomeseros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:checked="true"
+                        android:textColor="#717A8F" />
+                </RadioGroup>
+            </LinearLayout>
+        <!-- Termina mas informacion -->
+            <Button
+                android:text="Enviar Negocio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enviarnegociop"
+                android:background="@drawable/addimgbtn"
+                android:textColor="@color/plif_color_blanco"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp" />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enviandonegocio"
+                android:visibility="gone" />
+            <Button
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/extra"
+                android:visibility="invisible"
+                android:textColor="@color/plif_color_blanco"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/snackbarPosition" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00FF0000"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+</RelativeLayout>

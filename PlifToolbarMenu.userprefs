@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="PlifToolbarMenu\PlifMX.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.LGD40590e9ba12" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\MainActivity.cs" line="14" column="1" />
+      <Breakpoint file="C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\PlifToolbarMenu\PerfilNegocio.cs" line="2379" column="1" />
+      <Breakpoint file="C:\Users\Usuario\AppData\Local\Temp\__layoutFile" line="26022" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PlifMX AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

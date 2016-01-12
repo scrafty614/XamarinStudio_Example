@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <GridView
+        android:id="@+id/albumGrid"
+        style="@style/PhotoGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:columnWidth="@dimen/photo_size"
+        android:horizontalSpacing="@dimen/photo_spacing"
+        android:numColumns="auto_fit"
+        android:padding="4dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/photo_spacing" />
+</RelativeLayout>

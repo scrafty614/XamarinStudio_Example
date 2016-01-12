@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlifMX", "PlifToolbarMenu\PlifMX.csproj", "{F43DC241-35D3-4270-A815-3E8471012549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlifToolbarMenu.UITests", "PlifToolbarMenu.UITests\PlifToolbarMenu.UITests.csproj", "{068275DD-9995-4435-8AD2-77EBEC24585E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{068275DD-9995-4435-8AD2-77EBEC24585E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068275DD-9995-4435-8AD2-77EBEC24585E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068275DD-9995-4435-8AD2-77EBEC24585E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068275DD-9995-4435-8AD2-77EBEC24585E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43DC241-35D3-4270-A815-3E8471012549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43DC241-35D3-4270-A815-3E8471012549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43DC241-35D3-4270-A815-3E8471012549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43DC241-35D3-4270-A815-3E8471012549}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+	EndGlobalSection
+EndGlobal

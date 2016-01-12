@@ -1,0 +1,11 @@
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\Cheesesquare.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\Mono.Android.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\mscorlib.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\System.Core.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\System.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\System.Xml.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\Xamarin.Android.Support.Design.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\Xamarin.Android.Support.v7.CardView.dll
+C:\Users\Usuario\Documents\Projects\PlifToolbarMenu\Components\xamandroidsupportdesign-22.2.0.0\samples\Cheesesquare\obj\Debug\assemblies\Xamarin.Android.Support.v7.RecyclerView.dll

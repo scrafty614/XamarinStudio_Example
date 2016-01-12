@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="50dp"
+        android:background="@color/plif_color_blanco">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:padding="10dp"
+            android:background="@color/plif_color_blanco">
+            <TextView
+                android:text="Regístrate"
+                android:textSize="26sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="2px"
+                android:minHeight="2px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#E5E5E5"
+                android:id="@+id/separador" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombre"
+                android:hint="Nombre"
+                android:background="@drawable/back"
+                android:padding="5dp"
+                android:layout_margin="5dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/apellidos"
+                android:hint="Apellidos"
+                android:background="@drawable/back"
+                android:padding="5dp"
+                android:layout_margin="5dp" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:hint="Email"
+                android:background="@drawable/back"
+                android:padding="5dp"
+                android:layout_margin="5dp" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pass1"
+                android:hint="Contraseña"
+                android:background="@drawable/back"
+                android:padding="5dp"
+                android:layout_margin="5dp" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pass2"
+                android:hint="Verifica tu contraseña"
+                android:background="@drawable/back"
+                android:padding="5dp"
+                android:layout_margin="5dp" />
+            <TextView
+                android:text="Elige tu foto de perfil:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1">
+                <TextView
+                    android:text="@string/subefoto"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/subeimagen"
+                    android:background="@drawable/back"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+                <TextView
+                    android:text="@string/subeimagen"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/subefoto"
+                    android:background="@drawable/back"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fotocontainer"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:visibility="gone">
+                <ImageView
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/fotoperfil" />
+            </LinearLayout>
+            <Button
+                android:layout_marginTop="10dp"
+                android:text="Regístrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registrar"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/addportada"
+                android:textColor="@color/plif_color_blanco" />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/esperaregistro"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/snackbarPosition" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#00FF0000"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+</RelativeLayout>

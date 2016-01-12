@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+	    <item name="colorPrimary">#2193F3</item>
+	    <item name="android:fitsSystemWindows">true</item>
+
+
+	   
+	 </style>
+
+
+	 <style name="logincorreo">
+	 <item name="colorControlNormal">@color/plif_color_naranja_oscuro</item> <!-- inactivo -->
+       <item name="colorControlActivated">#2A4596</item> <!--- señalado para escribir -->
+       <item name="colorControlHighlight">#0000FF</item>
+	 </style>
+
+<style name="PhotoGrid">
+<item name="android:drawSelectorOnTop">true</item>
+<item name="android:listSelector">@drawable/photogrid_selector</item>
+</style>
+
+
+
+	<color name="plif_color_blanco">#FFFFFF</color>
+	<color name="plif_color_azul">#2A4496</color>
+	<color name="plif_color_naranja">#E73c14</color>
+	<color name="plif_color_naranja_oscuro">#E55230</color>
+
+	<style name="SombraTexto">
+    <item name="android:shadowColor">#AAA</item>
+    <item name="android:shadowDx">4</item>
+    <item name="android:shadowDy">4</item>
+    <item name="android:shadowRadius">3</item>
+  </style>
+
+  <style name="SombraTextoFuerte">
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">4</item>
+    <item name="android:shadowDy">4</item>
+    <item name="android:shadowRadius">3</item>
+  </style>
+
+   <style name="TextoLogin" parent="TextAppearance.AppCompat">
+    <!---hint color And Label Color in False State-->
+    <item name="android:textColorHint">@color/plif_color_azul</item> 
+    <!---<item name="android:textSize">20sp</item>-->
+    <!--Label color in True State And Bar Color False And True State-->
+    <item name="colorAccent">@color/plif_color_azul</item>
+    <item name="colorControlNormal">@color/plif_color_azul</item>
+    <item name="colorControlActivated">@color/plif_color_azul</item>
+ </style>
+
+</resources>

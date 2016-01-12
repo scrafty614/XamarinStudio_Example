@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">PlifMX</string>
+	<string name="FAPP">1079184882105348</string>
+	<string name="open_drawer">Open Drawer</string>
+	<string name="close_drawer">Close Drawer</string>
+
+	<!--- FA STRINGS -->
+	<string name="sobre_este_negocio">&#xf041; Sobre este negocio</string>
+	<string name="tel_icon">&#xf098;</string>
+	<string name="web_icon">&#xf0ac;</string>
+
+	<string name="camera"> &#xf030; </string>
+	<string name="plus"> &#xf055; </string>
+	<string name="lightbulb"> &#xf0eb; </string>
+	<string name="image"> &#xf03e; </string>
+	<string name="heart"> &#xf004; </string>
+	<string name="heartempty"> &#xf08a; </string>
+
+	<string name="mensaje"> &#xf0e0; </string>
+
+	<string name="miciudad">&#xf002; BUSCAR EN MI CIUDAD</string>
+	<string name="cercademi">&#xf124; CERCA DE MI</string>
+
+	<string name="horarios">&#xf017; Horario</string>
+	<string name="ultimos_reviews">&#xf022; Comentarios	</string>
+	<string name="fotos_negocio">&#xf03e; Galeria de Imagenes	</string>
+	<string name="editar_foto"> &#xf1fc; </string>
+	<string name="llamar_ahora">&#xf10b; Llamar ahora	</string>
+	<string name="lel">10</string>
+
+	<string name="subefoto">&#xf030;</string>
+	<string name="subeimagen">&#xf03e;</string>
+
+	<!--- ESTRELLAS CALIFICACIONES -->
+	<!--- TERMINAN ESTRELLAS CALIFICACIONES -->
+
+
+
+</resources>
